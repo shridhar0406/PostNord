@@ -1,0 +1,21 @@
+<project name="SLCT" default="deploy" basedir="." xmlns:sf="antlib:com.salesforce">
+	
+	<!-- SLCT SVN URL -->
+	
+	<property name="SLCTSVNRepo" value=""/>
+	<property file="build.properties"/>
+	<property environment="env"/>
+
+	<!-- SLCT Deployment -->
+				
+	<target name="deployAll">
+        <sf:deploy username="${sf.username}" 
+					password="${sf.password}" 
+					serverurl="${sf.serverurl}"
+					logType="Details"
+					deployRoot="${src}"/>	
+        </sf:deploy>
+    </target>
+
+
+</project>
