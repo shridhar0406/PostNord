@@ -3,6 +3,10 @@
     <types>
         <members>TSandboxRefresh</members>
         <name>ApexPage</name>
-    </types>	    
+    </types>	 
+    <types>
+        <members>TSandboxRefreshController</members>
+        <name>ApexClass</name>
+    </types>
     <version>31.0</version>
 </Package>
